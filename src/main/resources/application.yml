@@ -4,3 +4,9 @@ server:
 spring:
   rabbitmq:
     host: localhost
+
+  cloud:
+    stream:
+      bindings:
+        input:
+          group: demo-receiver
